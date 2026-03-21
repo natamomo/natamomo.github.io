@@ -338,3 +338,15 @@ function openGallery(key) {
     </div>
 </footer>
 
+<!-- Gallery Modal (unchanged) -->
+<div id="modal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-4xl w-full">
+        <div class="p-6 flex justify-between items-center border-b">
+            <div id="modal-name" class="font-medium text-xl"></div>
+            <button onclick="document.getElementById('modal').classList.add('hidden')" class="text-4xl">×</button>
+        </div>
+        <div class="p-8"><img id="modal-main" class="w-full rounded-2xl"></div>
+        <div id="thumbs" class="flex gap-4 overflow-x-auto p-8"></div>
+    </div>
+</div>
+
