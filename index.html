@@ -14,6 +14,8 @@
         .section-title:after { content: ''; position: absolute; bottom: -8px; left: 0; width: 60px; height: 2px; background: #d4a373; }
         .portfolio-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .portfolio-card:hover { transform: translateY(-12px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15); }
+        .timeline-dot { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 12px; height: 12px; background: #d4a373; border-radius: 50%; }
+        .timeline-line { position: absolute; left: 6px; top: 0; bottom: 0; width: 2px; background: #e8d9c7; }
     </style>
 </head>
 <body class="bg-[#f9f5f0] text-[#3f2e1e] leading-relaxed">
@@ -44,7 +46,7 @@
                 Available for projects
             </div>
             <h1 class="text-6xl md:text-7xl heading-font leading-none tracking-tighter">Natasha Gan</h1>
-            <p class="text-3xl text-[#6b5533] font-light">Retail Development &amp; Store Planning Professional</p>
+            <p class="text-3xl text-[#6b5533] font-light">Retail Development & Store Planning Professional</p>
             <p class="max-w-md text-lg text-[#6b5533]">15+ years crafting luxury flagship boutiques and hospitality-integrated spaces across APAC and beyond.</p>
             <a href="#portfolio" class="px-8 py-4 bg-[#3f2e1e] text-white rounded-full hover:bg-black transition-all inline-flex items-center gap-2">View my projects <i class="fas fa-arrow-down text-xs"></i></a>
         </div>
@@ -60,11 +62,11 @@
 <section id="about" class="py-28 bg-white">
     <div class="max-w-5xl mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="section-title text-5xl heading-font inline-block">About Me</h2>
+            <h2 class="section-title text-5xl heading-font inline-block relative">About Me</h2>
         </div>
         <div class="max-w-3xl mx-auto text-center">
             <p class="text-3xl heading-font tracking-tight mb-6">Crafting Luxury Retail Realities.</p>
-            <p class="text-xl leading-relaxed text-[#3f2e1e]">Accomplished Retail Development and Store Planning professional with 15+ years of experience delivering flagship boutiques and hospitality-integrated environments for the world’s most prestigious brands.</p>
+            <p class="text-xl leading-relaxed text-[#3f2e1e]">Accomplished Retail Development and Store Planning professional with 15+ years of experience delivering flagship boutiques and hospitality-integrated environments for the world's most prestigious brands.</p>
         </div>
         <div class="grid md:grid-cols-4 gap-6 mt-16">
             <div class="bg-[#f9f5f0] p-6 rounded-3xl text-center"><i class="fas fa-shield-alt text-4xl text-[#d4a373] mb-4"></i><div class="font-medium text-sm tracking-wider">CAPEX<br>GOVERNANCE</div></div>
@@ -75,11 +77,11 @@
     </div>
 </section>
 
-<!-- Portfolio - ALL 8 CARDS -->
+<!-- Portfolio -->
 <section id="portfolio" class="py-28 bg-[#f9f5f0]">
     <div class="max-w-6xl mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="section-title text-5xl heading-font inline-block">Selected Projects</h2>
+            <h2 class="section-title text-5xl heading-font inline-block relative">Selected Projects</h2>
             <p class="mt-4 text-[#6b5533]">Click any project to view all completion photos</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -119,22 +121,109 @@
     </div>
 </section>
 
-<!-- Professional Experience (clean, no chapters) -->
+<!-- Professional Experience - NO CHAPTERS -->
 <section id="experience" class="py-28 bg-white">
     <div class="max-w-5xl mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="section-title text-5xl heading-font inline-block">Professional Experience</h2>
+            <h2 class="section-title text-5xl heading-font inline-block relative">Professional Experience</h2>
         </div>
-        <div class="space-y-16">
-            <!-- Graff, Audemars Piguet, Cartier, Early Career - all clean (same as before) -->
-            <!-- Full details from your CV are included in the code below -->
+        <div class="relative max-w-4xl mx-auto">
+            <div class="timeline-line"></div>
+            <div class="space-y-16">
+                <!-- Graff Diamonds & Project Manager -->
+                <div class="relative pl-16">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-[#f9f5f0] rounded-3xl p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="text-2xl font-medium mb-1">Project Manager</div>
+                                <div class="text-[#d4a373] font-medium mb-1">Graff Diamonds</div>
+                                <div class="text-sm text-[#8c6f4a]">Apr 2024 – Oct 2025</div>
+                            </div>
+                            <div class="text-sm text-[#6b5533]">Hong Kong</div>
+                        </div>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Acted as HQ representative for global boutique developments, aligning brand vision, design intent, commercial objectives and technical feasibility</li>
+                            <li>• Led delivery of complex flagship projects across Japan, Middle East, Oceania</li>
+                            <li>• Established Oceania installation guidelines and shipping/packing standards</li>
+                            <li>• Reviewed consultant, diamond installer and landlord technical agreements</li>
+                            <li>• Established project legal frameworks covering CAPEX, quality, risk management</li>
+                            <li>• Key programs: Japan, Dubai, Melbourne, Jakarta, China, Wuhan, Beijing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Audemars Piguet Regional Store Planning Manager -->
+                <div class="relative pl-16">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-[#f9f5f0] rounded-3xl p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <div class="text-2xl font-medium mb-1">Regional Store Planning Manager</div>
+                                <div class="text-[#d4a373] font-medium mb-1">Audemars Piguet</div>
+                                <div class="text-sm text-[#8c6f4a]">Jun 2022 – Mar 2024</div>
+                            </div>
+                            <div class="text-sm text-[#6b5533]">Hong Kong</div>
+                        </div>
+                        <ul class="space-y-2 text-sm">
+                            <li>• HQ Store Design & Planning boutique development regional Asia, reporting to CEO</li>
+                            <li>• End-to-end CAPEX planning through construction, monitoring site coordination assessments</li>
+                            <li>• Supported site selection feasibility and CAPEX benchmarking analysis</li>
+                            <li>• Reviewed leasing terms, technical schedules and landlord interfaces</li>
+                            <li>• Aligned commercial, operational, technical brand requirements and interfaces</li>
+                            <li>• Contributed to AP House concepts blending hospitality, heritage, manufacture</li>
+                            <li>• Key projects: HK, Henderson APH (L'OCCITANE), Macau Four Seasons APH (L'OCCITANE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Education & Tools section included -->
     </div>
 </section>
 
-<!-- Contact + Gallery Modal + Script (full working version) -->
-<!-- The rest of the code continues with contact, footer, and the complete projects gallery script -->
+<!-- Contact -->
+<section id="contact" class="py-28 bg-[#f9f5f0]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="text-center mb-16">
+            <h2 class="section-title text-5xl heading-font inline-block relative">Get In Touch</h2>
+        </div>
+        <p class="text-xl text-[#6b5533] mb-12 max-w-2xl mx-auto">Open to new luxury retail development opportunities across APAC. Let's discuss your next flagship project.</p>
+        <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <a href="mailto:natasha.gan@email.com" class="group bg-white p-8 rounded-3xl hover:shadow-xl transition-all flex items-center gap-4">
+                <div class="w-12 h-12 bg-[#d4a373] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <i class="fas fa-envelope text-white"></i>
+                </div>
+                <div>
+                    <div class="font-medium">Email</div>
+                    <div class="text-sm text-[#6b5533]">natasha.gan@email.com</div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/natasha-gan" target="_blank" class="group bg-white p-8 rounded-3xl hover:shadow-xl transition-all flex items-center gap-4">
+                <div class="w-12 h-12 bg-[#d4a373] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <i class="fab fa-linkedin text-white"></i>
+                </div>
+                <div>
+                    <div class="font-medium">LinkedIn</div>
+                    <div class="text-sm text-[#6b5533]">Let's Connect</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Modal -->
+<div id="modal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] flex flex-col">
+        <div class="p-6 flex justify-between items-center border-b border-[#e8d9c7]">
+            <div id="modal-name" class="font-medium text-xl"></div>
+            <button onclick="document.getElementById('modal').classList.add('hidden')" class="text-4xl hover:text-[#d4a373] transition-colors">×</button>
+        </div>
+        <div class="p-8 flex-1 flex items-center justify-center">
+            <img id="modal-main" class="w-full h-auto max-h-full rounded-2xl max-w-full object-contain">
+        </div>
+        <div id="thumbs" class="flex gap-4 overflow-x-auto p-8 bg-[#f9f5f0] rounded-b-3xl"></div>
+    </div>
+</div>
 
 <script>
 const projects = {
@@ -157,25 +246,13 @@ function openGallery(key) {
     p.images.forEach(src => {
         let img = document.createElement("img");
         img.src = src;
-        img.className = "w-20 h-20 object-cover rounded-xl cursor-pointer border-2 hover:border-[#d4a373]";
+        img.className = "w-20 h-20 object-cover rounded-xl cursor-pointer border-2 hover:border-[#d4a373] hover:scale-105 transition-all flex-shrink-0";
         img.onclick = () => document.getElementById("modal-main").src = src;
         thumbs.appendChild(img);
     });
     document.getElementById("modal").classList.remove("hidden");
 }
 </script>
-
-<!-- Gallery Modal -->
-<div id="modal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-4xl w-full">
-        <div class="p-6 flex justify-between items-center border-b">
-            <div id="modal-name" class="font-medium text-xl"></div>
-            <button onclick="document.getElementById('modal').classList.add('hidden')" class="text-4xl">×</button>
-        </div>
-        <div class="p-8"><img id="modal-main" class="w-full rounded-2xl"></div>
-        <div id="thumbs" class="flex gap-4 overflow-x-auto p-8"></div>
-    </div>
-</div>
 
 </body>
 </html>
